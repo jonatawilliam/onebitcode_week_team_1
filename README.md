@@ -21,7 +21,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jamessom/facelitics/">
-    <img src="https://raw.githubusercontent.com/jamessom/facelitics/master/assets/logo1.png?sanitize=true&raw=true" alt="Logo" >
+    <img src="https://raw.githubusercontent.com/jamessom/facelitics/master/assets/images/logo1.png?sanitize=true&raw=true" alt="Logo" >
   </a>
 
   <h3 align="center">Facelitics</h3>

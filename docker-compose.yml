@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  faceletics_db:
+    container_name: faceletics_db
+    image: postgres:9.5-alpine
+    ports: [ "5432:5432" ]
+    networks: [ faceletics_net ]
+    logging:
+      driver: "none"
+
+  faceletics_app:
+    image: faceletics:latest
+    container_name: faceletics_app
+    build: .
+    command: sh start
+    volumes: [ ".:/faceletics_app", ".gems_faceletics:/.gems_faceletics" ]
+    ports: [ "3030:3000" ]
+    networks: [ faceletics_net ]
+    links: [ faceletics_db ]
+    depends_on: [ faceletics_db ]
+    env_file: [ ".env" ]
+
+volumes:
+  .gems_faceletics:
+
+networks:
+  faceletics_net:
+    driver: bridge

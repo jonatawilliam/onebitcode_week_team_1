@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  politician_types: one
+  name: Seu Creysson
+  photo: url-foto
+  political_party: Tabajara
+  state: DF
+
+two:
+  politician_types: two
+  name: Tabajara
+  photo: url-foto
+  political_party: Capivara
+  state: SP

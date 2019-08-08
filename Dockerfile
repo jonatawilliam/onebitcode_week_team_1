@@ -1,6 +1,6 @@
 FROM ruby:2.5.5-alpine
 
-ENV APP_HOME /faceletics
+ENV APP_HOME /faceletics_app
 ENV BUNDLE_PATH ${APP_HOME}/.gems_faceletics
 
 RUN apk update && apk upgrade && apk --no-cache add build-base nodejs postgresql-dev git tzdata && rm -rf /var/cache/apk/*

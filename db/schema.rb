@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2019_08_08_011837) do
 
   create_table "politicians", force: :cascade do |t|
     t.bigint "politician_types_id"
-    t.string "name", limit: 70
+    t.string "name", limit: 90
     t.text "photo"
-    t.string "political_party", limit: 10
+    t.string "political_party", limit: 20
     t.string "state", limit: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

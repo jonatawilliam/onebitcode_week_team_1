@@ -1,15 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  politician_types: one
+  politician_types_id: 1
   name: Seu Creysson
   photo: url-foto
   political_party: Tabajara
   state: DF
+  created_at: <%= 5.day.ago.to_s(:db) %>
+  updated_at: <%= 5.day.ago.to_s(:db) %>
 
 two:
-  politician_types: two
+  politician_types_id: 2
   name: Tabajara
   photo: url-foto
   political_party: Capivara
   state: SP
+  created_at: <%= 5.day.ago.to_s(:db) %>
+  updated_at: <%= 5.day.ago.to_s(:db) %>

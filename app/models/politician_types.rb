@@ -1,0 +1,2 @@
+class PoliticianTypes < ApplicationRecord
+end
